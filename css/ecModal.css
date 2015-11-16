@@ -82,7 +82,7 @@ body {
 
 .md-content .md-header {
     margin: 0;
-    padding: 15px 20px;
+    padding: 8px 20px;
     text-align: left;
     font-size: 2em;
     font-weight: 300;
@@ -91,11 +91,12 @@ body {
 
 .md-content .md-body {
     padding: 15px 20px;
+    overflow-x: auto;
 }
 
 .md-content .md-footer {
     text-align: right;
-    padding: 15px 20px;
+    padding: 8px 20px;
     border-top: 1px solid rgb(229, 229, 229);
 }
 

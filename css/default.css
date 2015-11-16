@@ -21,7 +21,13 @@ a:hover,
 a:active {
 	color: #333;
 }
-
+pre {
+    color: #006699;
+    background-color: rgb(239,239,239);
+    padding-bottom:10px ;
+    padding-left:10px ;
+    border-radius: 3px;
+}
 /* Header Style */
 .main,
 .md-container > header {

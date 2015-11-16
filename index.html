@@ -15,18 +15,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -36,18 +66,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -57,18 +117,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -78,18 +168,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -99,18 +219,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -120,18 +270,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -141,18 +321,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -162,18 +372,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -183,18 +423,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -204,18 +474,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -225,18 +525,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -246,18 +576,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -267,18 +627,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -288,18 +678,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -309,18 +729,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -330,18 +780,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -351,18 +831,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -372,18 +882,48 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
+                <button class="md-close">关闭</button>
             </div>
         </div>
     </div>
@@ -393,19 +933,49 @@
                 <h3>Modal Dialog</h3>
             </div>
             <div class="md-body">
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <p>This is a modal window. You can do the following things with it:</p>
+                <p>使用简介:</p>
                 <ul>
-                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    <li><strong>绑定点击事件打开模态窗体:</strong>
+                        <pre><code>
+$(selector).ecModal({
+        target: 'id',                       //模板id
+        blur: false,                        //模糊背景
+        overlayClose: true,                 //点击其它区域关闭
+        closeCallback: function() {
+            //md-close类触发的关闭回调函数
+        }
+    });</code></pre>
+                    </li>
+                    <li><strong>立即打开:</strong>
+                        <pre><code>
+$.ecModal.open({
+            target: 'id',                       //模板id
+            beforeOpen: function() {
+                //打开前执行
+
+            },
+            afterOpen: function() {
+                //打开后执行
+            },
+            blur: false,                        //模糊背景
+            overlayClose: true,                 //点击其它区域关闭
+            closeCallback: function() {
+                //md-close类触发的关闭回调函数
+            }
+        });</code></pre>
+                    </li>
+                    <li><strong>立即关闭:</strong>
+                        <pre><code>
+$.ecModal.close(function() {
+            //关闭后后回调函数
+            
+        });</code></pre>
+                    </li>
                 </ul>
             </div>
             <div class="md-footer">
-                <button class="md-close">Close me!</button>
-                <button id="qqq">Close me by custom!</button>
+                <button class="md-close">关闭</button>
+                <button id="qqq">自定义关闭</button>
             </div>
         </div>
     </div>
@@ -415,7 +985,7 @@
         </header>
         <div class="main clearfix">
             <div class="column">
-                <p>There are many possibilities for modal overlays to appear. Here are some modern ways of showing them using CSS transitions and animations.</p>
+                <p>一些模态窗体效果Demo展示，请点击右侧按钮。调用方法请阅读源码。</p>
             </div>
             <div class="column">
                 <button class="md-trigger" data-modal="modal-1">效果1</button>
@@ -436,7 +1006,8 @@
                 <button class="md-trigger" data-modal="modal-16">效果16</button>
                 <button class="md-trigger md-setperspective" data-modal="modal-17">效果17</button>
                 <button class="md-trigger md-setperspective" data-modal="modal-18">效果18</button>
-                <button class="md-trigger md-setperspective" data-modal="modal-19">效果19</button><br>
+                <button class="md-trigger md-setperspective" data-modal="modal-19">效果19</button>
+                <br>
                 <button id="tst" data-modal="modal-19">脚本触发1</button>
                 <button id="tst2">脚本触发2</button>
             </div>
@@ -462,11 +1033,16 @@
     $('#tst2').click(function() {
         $.ecModal.open({
             target: 'modal-16',
+            blur: true,
+            overlayClose: false,
+            closeCallback: function() {
+                alert('md-close触发关闭事件');
+            },
             beforeOpen: function() {
-              alert('即将打开');
+                alert('即将打开');
             },
             afterOpen: function() {
-               alert('打开完成');
+                alert('打开完成');
             },
         });
     });
