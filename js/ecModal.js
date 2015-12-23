@@ -28,19 +28,6 @@
             var overlay = $('.md-overlay');
             var modal = $('#' + opts.target);
             var isSetperspective = modal.hasClass('md-effect-17') || modal.hasClass('md-effect-18') || modal.hasClass('md-effect-19');
-            if ($el) {
-                $el.on('click', function() {
-                    openEvent();
-                });
-            } else {
-                openEvent();
-            }
-            modal.find('.md-close').unbind('click');
-            modal.find('.md-close').on('click', function(event) {
-                event = event || window.event;
-                removeModal(opts.closeCallback);
-                event.stopPropagation();
-            });
 
             function openEvent() {
                 var width = modal.width();
@@ -73,6 +60,19 @@
                     }, 25);
                 }
             }
+            if ($el) {
+                $el.on('click', function() {
+                    openEvent();
+                });
+            } else {
+                openEvent();
+            }
+            modal.find('.md-close').unbind('click');
+            modal.find('.md-close').on('click', function(event) {
+                event = event || window.event;
+                removeModal(opts.closeCallback);
+                event.stopPropagation();
+            });
         }
     }
 
