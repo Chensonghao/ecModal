@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+  <script>
+    (function() {
+      function DrawPieChart(opts) {
+        this.init(opts)
+          .draw();
+      }
+      DrawPieChart.prototype = {
+        init: function(opts) {
+          var canvas = document.getElementById(opts.id);
+          if (!canvas.getContext) {
+            return console.log('该浏览器不支持Canvas');
+          }
+          var dpr = window.devicePixelRatio || 1;
+          var panelWidth = opts.width,
+              panelHeight = opts.height,
+              canvasWidth = panelWidth * dpr,
+              canvasHeight = panelHeight * dpr;
+          canvas.style.width = panelWidth+'px';
+          canvas.style.height = panelHeight+'px';
+          canvas.width = canvasWidth;
+          canvas.height = canvasHeight;
+
+          this.canvasWidth=canvasWidth;
+          this.canvasHeight=canvasHeight;
+          this.items = opts.items;
+          this.dpr = dpr;
+          this.r = 300;
+          this.context = canvas.getContext('2d');
+          return this;
+        },
+        draw:function() {
+          this.items.forEach(function(item) {
+            this.drawPie(item);
+          }.bind(this));
+          //绘制文字说明
+          this.drawLegend();
+        },
+        drawPie: function(item) {
+          var context = this.context;
+          context.beginPath();
+          var beginAngle = this.lastAngle || 0;
+          var endAngle = beginAngle + item.value * Math.PI * 2;
+          console.log(beginAngle,endAngle);
+          this.lastAngle = endAngle;
+          context.moveTo(this.canvasWidth/2, this.canvasHeight/2);
+          context.arc(this.canvasWidth/2, this.canvasHeight/2, this.r, beginAngle , endAngle, false);
+          context.fillStyle = item.color;
+          context.fill();
+        },
+        drawLegend:function(){
+
+        }
+      };
+      var opts = {
+        id:'canvas',
+        items:[{
+          name: 'chrome',
+          value: 0.4,
+          color: '#f2b90d'
+        }, {
+          name: 'firefox',
+          value: 0.3,
+          color: '#f66b6b'
+        }, {
+          name: 'ie',
+          value: 0.2,
+          color: '#388bff'
+        }, {
+          name: 'opera',
+          value: 0.1,
+          color: '#34be5b'
+        }],
+        width:400,
+        height:400
+      }
+      new DrawPieChart(opts);
+
+    })();
+  </script>
+</body>
+
+</html>
